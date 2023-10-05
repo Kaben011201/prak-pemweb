@@ -1,5 +1,5 @@
 <!-- by Bendry Lakburlawal - 121140111  -->
-<!-- Praktikum Pemrograman Web RB - Tugas 1 -->
+<!-- Praktikum Pemrograman Web RB - Tugas 2 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +10,12 @@
 
 </head>
 <body>
-    <h3>Latihan Percobaan</h3>
-
     <header class="header">
         <div class="profil">
             <img class="foto_profil" src="../prak1/Foto Saya.jpg" alt="">
             <div class="info_profil">
-                <h1>It's Me, Aquamarine</h1>
-                <p>Informasi Saya</p>
+                <h2>It's Me, Bendry</h2>
+                <p>Saya mahasiswa di kelas pemweb RB</p>
             </div>
         </div>
 
@@ -34,80 +32,98 @@
         </nav>
     </header>
 
-    <div>
-        <h2>Tentang Saya</h2>
-        <p>Saya seorang mahasiswa yang masih menempuh pendidikan sarjana di Institut Teknologi Sumatera,<br> Program 
-            Studi Teknik Informatika.Saya seorang yang tidak mudah menyerah untuk mendapatkan hal yang saya inginkan. <br>
-            Saya memiliki rasa ingin tahu yang tinggi terutama dalam mengembangkan pemahaman dan kemampuan dalam <br>
-            bidang teknologi informasi, bertanggung jawab, mudah beradaptasi dengan lingkungan sekitar, mampu <br>
-            berkomunikasi dan bekerja dalam kelompok. Saya suka menyelesaikan tantangan yang baru untuk <br>
-            meningkatkan dan mengasah kemampuan saya</p>
+    <main>
+        <div class="layout">
+            <h2>Tentang Saya</h2>
+            <p>Saya seorang mahasiswa yang masih menempuh pendidikan sarjana di Institut Teknologi Sumatera, Program Studi Teknik Informatika.Saya seorang yang tidak mudah menyerah untuk mendapatkan hal yang saya inginkan.Saya memiliki rasa ingin tahu yang tinggi terutama dalam mengembangkan pemahaman dan kemampuan dalambidang teknologi informasi, bertanggung jawab, mudah beradaptasi dengan lingkungan sekitar, mampu berkomunikasi dan bekerja dalam kelompok. Saya suka menyelesaikan tantangan yang baru untuk meningkatkan dan mengasah kemampuan saya</p>
+            
+            <p class="videonlabel">
+                <video width="500px" src="../prak1/Video Saya.mp4" controls></video><br>
+                <label>Video Dance Saya</label>
+            </p>
+            
+        </div>
+    
+        <div class="layout">
+            <h2>Pengalaman Kerja</h2>
+            <table class="mytable">
+                <tr>
+                    <th rowspan="2">No</th>
+                    <th rowspan="2">Posisi</th>
+                    <th rowspan="2">Perusahaan</th>
+                    <th colspan="2">Waktu</th>
+                </tr>
+    
+                <tr>
+                    <th>Mulai</th>
+                    <th>Selesai</th>
+                </tr>
+    
+                <tr>
+                    <td>1</td>
+                    <td>Delivery</td>
+                    <td>PT.Sowantodi</td>
+                    <td>2019</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Salles</td>
+                    <td>CV.Waoreng Kita</td>
+                    <td>2020</td>
+                    <td>2020</td>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="layout">
+            <h2>Hubungi Saya</h2>
+            <p>
+                <label for="">Nama : </label><input type="text" placeholder="ex : Bendry">
+            </p>
+            <p>
+                <label for="">Email : </label><input type="email" placeholder="ex : xxxx@gmail.com">
+            </p>
+            <p>Apakah Bendry berkuliah di ITERA?</p>
+            <p>
+                <input type="radio" name="Iya"><label for="">Iya<label>
+            </p>
+            <p>
+                <input type="radio" name="No"><label for="">No</label>
+            </p>
         
-        <ul>
-            <video width="500px" src="../prak1/Video Saya.mp4" controls autoplay="true"></video><br>
-            <label>Video Dance Saya</label>
-        </ul>
-    </div>
-
-    <div>
-        <h2>Pengalaman Kerja</h2>
-        <table border="1px">
-            <tr>
-                <th rowspan="2">No</th>
-                <th rowspan="2">Posisi</th>
-                <th rowspan="2">Perusahaan</th>
-                <th colspan="2">Waktu</th>
-            </tr>
-
-            <tr>
-                <th>Mulai</th>
-                <th>Selesai</th>
-            </tr>
-
-            <tr>
-                <td>1</td>
-                <td>Delivery</td>
-                <td>PT.Sowantodi</td>
-                <td>2019</td>
-                <td>2020</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Salles</td>
-                <td>CV.Waoreng Kita</td>
-                <td>2020</td>
-                <td>2020</td>
-            </tr>
-        </table>
-    </div>
-
-    <div>
-        <h2>Hubungi Saya</h2>
-        <p>
-            <label for="">Nama : </label><input type="text" placeholder="ex : Bendry">
-        </p>
-        <p>
-            <label for="">Email : </label><input type="email" placeholder="ex : xxxx@gmail.com">
-        </p>
-        <p>Apakah Bendry berkuliah di ITERA?</p>
-        <input type="radio" name="Iya"><label for="">Iya</label><br>
-        <input type="radio" name="No"><label for="">No</label>
-    </div>
-
-    <div>
-        <h2>Skill</h2>
-        <input type="checkbox" name="Dance"><label for="">Dancing</label> <br>
-        <input type="checkbox" name="Singing"><label for="">Singing</label> <br>
-        <input type="checkbox" name="HTML"><label for="">HTML</label> <br>
-        <input type="checkbox" name="CSS"><label for="">CSS</label> <br>
-        <input type="checkbox" name="JavaScript"><label for="">JavaScript</label> <br>
-        <input type="checkbox" name="Komunikatif"><label for="">Komunikatif</label> <br>
-        <input type="checkbox" name="Adaptif"><label for="">Adaptif</label> <br> <br>
-    </div>
-
-    <label for=""><b>Pesan Singkat</b></label> <br>
-    <textarea name="" id="" cols="20" rows="2"></textarea> <br>
-
-    <button type="submit">Kirim</button>
+            <h2>Skill</h2>
+            <div class="skill">
+                <p>
+                    <input type="checkbox" name="Dance"><label for="">Dancing</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="Singing"><label for="">Singing</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="HTML"><label for="">HTML</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="CSS"><label for="">CSS</label> 
+                </p>
+                <p>
+                    <input type="checkbox" name="JavaScript"><label for="">JavaScript</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="Komunikatif"><label for="">Komunikatif</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="Adaptif"><label for="">Adaptif</label>
+                </p> <br>
+    
+                <p><label for=""><b>Pesan Singkat</b></label></p>
+                <p>
+                    <textarea name="" id="" cols="20" rows="3"></textarea>
+                </p>
+    
+                <button type="submit">Kirim</button>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

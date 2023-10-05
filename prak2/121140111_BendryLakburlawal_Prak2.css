@@ -1,3 +1,12 @@
+body{
+    background-color: rgb(221, 221, 221);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    margin: 0px;
+}
+
 .profil{
     display: flex;
     justify-content: start;
@@ -10,6 +19,8 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .info_profil{
@@ -19,11 +30,11 @@
 
 .info_profil h1{
     margin: 0px;
-    font-size: 20px;
 }
 
 .info_profil p{
     margin: 0px;
+    font-size: 14px;
 }
 
 .navbar{
@@ -39,4 +50,50 @@
 
 .navbar li a{
     text-decoration: none;
+}
+
+.layout{
+    background-color: white;
+    margin:15px 10px;
+    padding: 20px;
+}
+
+.videonlabel{
+    margin-top: 40px;
+    text-align: center;
+}
+
+table, td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.mytable th{
+    background-color: rgb(221, 221, 221);
+}
+
+.mytable{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+.skill p{
+    margin: 5px;
+}
+
+textarea{
+    resize: none;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color: rgb(26, 230, 155);
+}
+
+button:hover{
+    background-color: rgb(142, 232, 199);
+    cursor: pointer;
 }
