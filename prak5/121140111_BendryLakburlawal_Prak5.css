@@ -1,0 +1,75 @@
+/* 
+by Bendry Lakburlawal - 121140111
+Praktikum Pemrograman Web RB - Tugas 5 
+*/
+@font-face{
+    font-family: myFont;
+    src:url(TypoDigitDemo-VG9lV.ttf);
+}
+
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    width: 400px;
+    padding: 50px;
+    background-color: rgba(121, 118, 118, 0.941);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.merk{
+    font-size: 30px;
+    color: white; 
+    text-align: center;
+}
+
+.allbutton{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+    justify-items: center;
+}
+
+.noOperation{
+    background-color: rgb(51, 51, 51);
+}
+
+.operation{
+    background-color: rgb(254, 160, 10);
+}
+
+.noOperation, .operation{
+    border: none;
+    color: white;
+    font-size: 26px;
+    width: 90px;
+    height: 90px;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.result{
+    border: 1.5px solid white;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 80px;
+    color: white;
+    font-size: 70px;
+    align-content: center;
+    margin-bottom: 0px;
+    font-family: myFont;
+    margin: 0px;
+}
+
+#clear{
+    font-size: 17px;
+}

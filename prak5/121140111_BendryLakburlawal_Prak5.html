@@ -1,0 +1,81 @@
+<!-- by Bendry Lakburlawal - 121140111  -->
+<!-- Praktikum Pemrograman Web RB - Tugas 5 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prak 5</title>
+
+    <link rel="stylesheet" href="121140111_BendryLakburlawal_Prak5.css">
+</head> 
+<body>
+    <main>
+        <span class="merk">Calculator B-111</span>
+        <div>
+            <p class="result js-result">0</p>
+           
+            <div class="allbutton">
+                <button class="noOperation" id="one" onclick="
+                    updateCalculation('1');
+                ">1</button>
+                <button class="noOperation" id="two" onclick="
+                    updateCalculation('2');
+                ">2</button>
+                <button class="noOperation" id="three" onclick="
+                    updateCalculation('3');
+                ">3</button>
+                <button class="operation" id="add" onclick="
+                    updateCalculation(' + ');
+                ">+</button>
+                
+                <button class="noOperation" id="four" onclick="
+                    updateCalculation('4');
+                ">4</button>
+                <button class="noOperation" id="five" onclick="
+                    updateCalculation('5');
+                ">5</button>
+                <button class="noOperation" id="six" onclick="
+                    updateCalculation('6');
+                ">6</button>
+                <button class="operation" id="subs" onclick="
+                    updateCalculation(' - ');
+                ">-</button>
+                
+                <button class="noOperation" id="seven" onclick="
+                    updateCalculation('7');
+                ">7</button>
+                <button class="noOperation" id="eight" onclick="
+                    updateCalculation('8');
+                ">8</button>
+                <button class="noOperation" id="nine" onclick="
+                    updateCalculation('9');
+                ">9</button>
+                <button class="operation" id="multi" onclick="
+                    updateCalculation(' * ');
+                ">*</button>
+                
+                <button  class="noOperation" id="zero" onclick="
+                    updateCalculation(' 0 ');
+                ">0</button>
+                <button class="noOperation" id="dot" onclick="
+                    updateCalculation(' . ');
+                ">.</button>
+                <button class="noOperation" id="equal" onclick="
+                    result();
+                ">=</button>
+                <button class="operation" id="divide" onclick="
+                    updateCalculation(' / ');
+                ">/</button>
+                
+                <button class="noOperation" id="clear" onclick="
+                    clearNum();
+                ">Clear</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="121140111_BendryLakburlawal_Prak5.js"></script>
+</body>
+</html>
