@@ -2,16 +2,20 @@
 by Bendry Lakburlawal - 121140111
 Praktikum Pemrograman Web RB - Tugas 5 
 */
+
+//bagian ini untuk mengubah font pada hasil perhitungan.
 @font-face{
     font-family: myFont;
     src:url(TypoDigitDemo-VG9lV.ttf);
 }
 
+//bagian ini mengubah warna page keseluruhan menjadi warna hitam dan font yang digunkan adalah arial
 body{
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+//mengatur ukuran dari kalkulator
 main{
     width: 400px;
     padding: 50px;
@@ -23,12 +27,14 @@ main{
     gap: 15px;
 }
 
+//mengatur merk kalkulator
 .merk{
     font-size: 30px;
     color: white; 
     text-align: center;
 }
 
+//mengatur posisi atau tata letak semua button yang ada pada kalkulator
 .allbutton{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -37,14 +43,17 @@ main{
     justify-items: center;
 }
 
+//mengatur warna button angka menjadi warna hitam
 .noOperation{
     background-color: rgb(51, 51, 51);
 }
 
+//mengatur warna button operator menjadi warna emas
 .operation{
     background-color: rgb(254, 160, 10);
 }
 
+//mengatur ukuran dari semua button
 .noOperation, .operation{
     border: none;
     color: white;
@@ -55,6 +64,7 @@ main{
     cursor: pointer;
 }
 
+//mengatur tampilan hasil perhitungan pada kalkulator
 .result{
     border: 1.5px solid white;
     border-radius: 5px;
@@ -70,6 +80,7 @@ main{
     margin: 0px;
 }
 
+//mengatur button clear
 #clear{
     font-size: 17px;
 }

@@ -12,11 +12,19 @@
 </head> 
 <body>
     <main>
+        <!-- Menampilkan merk kalkulator -->
         <span class="merk">Calculator B-111</span>
+
+        <!-- Bagian tombol dan hasil -->
         <div>
-            <p class="result js-result">0</p>
+            <!-- Menampilkan hasil perhitungan. Default dari hasil adalah 0-->
+            <p class="result js-result">0</p> 
            
+            <!-- Seluruh button -->
             <div class="allbutton">
+                <!-- Button menggunakan onclick agar berfungsi ketiga button diklik.
+                Saat button diklik, javaScript akan mengeksekusi fungsi dengan nama updateCalculation
+                dan mengirim sebuah value seperti 1, 2, 3, dst. +, -, dst untuk di proses-->
                 <button class="noOperation" id="one" onclick="
                     updateCalculation('1');
                 ">1</button>
@@ -62,6 +70,9 @@
                 <button class="noOperation" id="dot" onclick="
                     updateCalculation(' . ');
                 ">.</button>
+
+                <!-- Pada saat klik tombol =, javaScript akan mengeksekusi fungsi result() dan 
+                hasilnya akan dikirim pada class js-result yang terdapat pada line 21 -->
                 <button class="noOperation" id="equal" onclick="
                     result();
                 ">=</button>
@@ -69,6 +80,9 @@
                     updateCalculation(' / ');
                 ">/</button>
                 
+                <!-- Pada saat tombol ini diklik, javaScript akan mengeksekusi fungsi clearNum()
+                dan yang terjadi adalah semua hasil pada result dihapus. Kemudian result akan
+                kembali pada hasil default, yaitu 0 -->
                 <button class="noOperation" id="clear" onclick="
                     clearNum();
                 ">Clear</button>
@@ -76,6 +90,7 @@
         </div>
     </main>
 
+    <!-- Men-link ke javaScript untuk eksekusi semua code yang menggunakan syntax javaScript -->
     <script src="121140111_BendryLakburlawal_Prak5.js"></script>
 </body>
 </html>
